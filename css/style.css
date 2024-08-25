@@ -55,6 +55,7 @@ header p {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 5fr 3fr;
+    flex-grow: 1;
 
 }
 
