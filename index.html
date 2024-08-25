@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/edit-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>MK Editor</title>
+</head>
+<body>
+
+    <header>
+        <h1><span>MK</span> Editor</h1>
+        <p>Edit your photos with ease</p>
+    </header>
+    
+
+   <main class="container">
+
+    <div class="img">
+
+        <div class="img-box">
+            <img id="img">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="upload">
+            <label for="upload"><i class="fa-solid fa-upload"></i></label>
+            <input type="file" id="upload">
+        </div>
+
+    </div>
+
+    <div class="filters">
+        <ul>
+
+            <li>
+                <label for="saturate">Saturate</label>
+                <input type="range" id="saturate" min="0" max="200" value="100">
+            </li>
+
+            <li>
+                <label for="contrast">Contrast</label>
+                <input type="range" id="contrast" min="0" max="200" value="100">
+            </li>
+
+            <li>
+                <label for="brightness">Brightness</label>
+                <input type="range" id="brightness" min="0" max="200" value="100">
+            </li>
+
+            <li>
+                <label for="sepia">Sepia</label>
+                <input type="range" id="sepia" min="0" max="200" value="0">
+            </li>
+
+            <li>
+                <label for="grayscale">Grayscale</label>
+                <input type="range" id="grayscale" min="0" max="1" step="0.1" value="0">
+            </li>
+
+            <li>
+                <label for="blur">Blur</label>
+                <input type="range" id="blur" min="0" max="10" step="0.1" value="0">
+            </li>
+
+            <li>
+                <label for="hue-rotate">Hue Rotate</label>
+                <input type="range" id="hue-rotate" min="0" max="350" value="0">
+            </li>
+
+            <li>
+                <a download="image" id="download"><i class="fa-solid fa-download"></i></a>
+                <span onclick="resetValue()" id="reset"><i class="fa-solid fa-rotate-left"></i></span>
+            </li>
+
+        </ul>
+    </div>
+    
+   </main>
+
+   <footer>
+    <p>Deisgned and Developed by <span class="elkadouri">Elkadouri</span>.</p>
+    <p>&copy; <span id="currentYear"></span> <span class="elkadouri">Elkadouri</span>. All Rights Reserved.</p>
+  </footer>
+  
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: #333;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Header Styles */
+header {
+    background-color: #4189d11c;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+header h1 span {
+    color: #0075ff;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    color: #ffffffb9;
+}
+
+
+
+.container{
+    background: #222;
+    width: 80vw;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img , canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+
+.upload input{
+   display: none; 
+}
+
+.upload label{
+   color: #fff;
+   padding: 8px 20px;
+   border: 2px dotted #fff;
+   cursor: pointer;
+   background-color: #060;
+}
+
+.filters{
+}
+
+.filters ul, .filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    direction: rtl;
+}
+
+.filters ul li label{
+   color: #fff;
+}
+
+.filters ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filters ul li:last-child a , .filters ul li:last-child span{
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #060;
+    cursor: pointer;
+}
+
+@media screen and (max-width:650px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .img img , canvas{
+        max-width: 80vw;
+        max-height: 60vh;
+    }
+}
+
+
+
+footer{
+    background-color: #4189d11c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+footer p span.elkadouri{
+    color:  #0075ff;
+    font-weight: bold;
+    font-size: 18px;
+}
